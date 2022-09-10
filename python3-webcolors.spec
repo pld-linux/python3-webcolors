@@ -7,22 +7,22 @@
 Summary:	Library for working with sRGB color specifications as used in HTML and CSS
 Summary(pl.UTF-8):	Biblioteka do pracy z definicjami kolorów sRGB używanymi w formatach HTML i CSS
 Name:		python3-%{module}
-Version:	1.11.1
-Release:	4
+Version:	1.12
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://github.com/ubernostrum/webcolors/releases
 Source0:	https://github.com/ubernostrum/webcolors/archive/%{version}/%{module}-%{version}.tar.gz
-# Source0-md5:	ca4ebd2707fa1b4ef6e024dba3a8e13a
+# Source0-md5:	7e330313ce1689d19d2823b329a5e342
 URL:		https://github.com/ubernostrum/webcolors
-Requires:	python3-modules >= 1:3.5
+BuildRequires:	python3-modules >= 1:3.7
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with doc}
 BuildRequires:	python3-sphinx_rtd_theme
 BuildRequires:	sphinx-pdg-3
 %endif
-Requires:	python3-modules >= 1:3.5
+Requires:	python3-modules >= 1:3.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
