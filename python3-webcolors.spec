@@ -8,7 +8,7 @@ Summary:	Library for working with sRGB color specifications as used in HTML and 
 Summary(pl.UTF-8):	Biblioteka do pracy z definicjami kolorów sRGB używanymi w formatach HTML i CSS
 Name:		python3-%{module}
 Version:	1.12
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://github.com/ubernostrum/webcolors/releases
